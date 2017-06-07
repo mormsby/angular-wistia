@@ -1,0 +1,3 @@
+var CONST = {
+    API_PASSWORD: "API_PASSWORD_HERE"
+};
