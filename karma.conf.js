@@ -16,8 +16,8 @@ module.exports = function(config) {
     files: [
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'www/src/js/*.js',
-      'www/src/vendor/angular-wistia/*.js',
+      'dist/angular-wistia.js',
+      'dist/angular-wistia-spec.js',
       'www/src/vendor/jquery.min.js',
       'www/src/vendor/jquery.ui.widget.js',
       'www/src/vendor/jquery.fileupload.js'
