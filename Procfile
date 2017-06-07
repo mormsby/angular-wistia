@@ -1,3 +1,1 @@
-web: cd www/
-web: npm install
-web: node server.js
+web: npm install && node server.js

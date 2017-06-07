@@ -16,11 +16,11 @@ module.exports = function(config) {
     files: [
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'src/js/*.js',
-      'src/vendor/angular-wistia/*.js',
-      'src/vendor/jquery.min.js',
-      'src/vendor/jquery.ui.widget.js',
-      'src/vendor/jquery.fileupload.js'
+      'www/src/js/*.js',
+      'www/src/vendor/angular-wistia/*.js',
+      'www/src/vendor/jquery.min.js',
+      'www/src/vendor/jquery.ui.widget.js',
+      'www/src/vendor/jquery.fileupload.js'
     ],
 
 
@@ -32,14 +32,14 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'src/**/*.html': ['ng-html2js'],
-      'src/**/!(*.mock|*.spec).js': ['coverage']
+      'www/src/**/*.html': ['ng-html2js'],
+      'www/src/**/!(*.mock|*.spec).js': ['coverage']
     },
 
 
     ngHtml2JsPreprocessor: {
       // strip this from the file path
-      stripPrefix: 'src/',
+      stripPrefix: 'www/src/',
       // create a single module that contains templates from all the files
       moduleName: 'templates'
     },
